@@ -31,7 +31,7 @@ export const HomePage = () => {
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">ECサイト</h4>
+            <h4 class="my-3">WEBアプリケーション</h4>
             <p class="text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
               maxime quam architecto quo inventore harum ex magni, dicta
@@ -43,7 +43,7 @@ export const HomePage = () => {
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">レスポンシブサイト</h4>
+            <h4 class="my-3">サンプル</h4>
             <p class="text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
               maxime quam architecto quo inventore harum ex magni, dicta
@@ -55,7 +55,7 @@ export const HomePage = () => {
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="my-3">ウェブセキュリティ</h4>
+            <h4 class="my-3">サンプル</h4>
             <p class="text-muted">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
               maxime quam architecto quo inventore harum ex magni, dicta
@@ -82,8 +82,8 @@ export const HomePage = () => {
           </div>
           <div class="col-md-4 services">
             <img src={firebaseImage} />
-            <h4>Firebase</h4>
-            <p>Firebaseがつかえます</p>
+            <h4>php / Laravel</h4>
+            <p>Laravelがつかえます</p>
           </div>
         </div>
         <button type="button" class="btn btn-primary">
