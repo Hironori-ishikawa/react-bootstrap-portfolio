@@ -17,17 +17,26 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background: black;
+  background: white;
   color: white;
-  height: 90px;
+  height: 100px;
   position: fixed;
   z-index: 10;
+  margin: 0 auto;
 }
+
 
 header .logo h3 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
+}
+
+h3 a {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--black-color);
+  transition: all 0.2s;
 }
 
 nav ul {
@@ -44,12 +53,12 @@ nav ul li {
 nav ul li a {
   font-size: 19px;
   text-decoration: none;
-  color: var(--white-color);
+  color: var(--black-color);
   transition: all 0.2s;
 }
 
 nav ul li a:hover {
-  color: #48b4af;
+  color: blue;
 }
 
 .container {
@@ -64,8 +73,8 @@ nav ul li a:hover {
 
 .profileImage {
   object-fit: cover;
-  height: 100px;
-  width: 100px;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   margin-bottom: 15px;
 }

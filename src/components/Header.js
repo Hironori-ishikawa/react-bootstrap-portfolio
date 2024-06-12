@@ -5,19 +5,19 @@ export const Header = () => {
   return (
     <header>
       <div className="logo">
-        <h3>ポートフォリオ</h3>
+        <h3><a href='/'>ポートフォリオ</a></h3>
       </div>
 
       <nav>
         <ul>
           <li>
-            <Link to="/">HOME</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/blog">BLOG</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="#">SNS</a>
+            <Link to="/sns">Sns</Link>
           </li>
         </ul>
       </nav>
