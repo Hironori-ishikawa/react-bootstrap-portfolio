@@ -8,50 +8,48 @@
   font-size: 18px;
   height: 100vh;
   width: 100%;
-  /* font-weight: 400; */
-  /* font-style: normal; */
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 960px;
   background: white;
   color: white;
-  height: 100px;
-  position: fixed;
+  height: 270px;
   z-index: 10;
   margin: 0 auto;
 }
 
 
-header .logo h3 {
+header .logo h1 {
   margin: 0;
   padding: 0;
   color: black;
 }
 
-h3 a {
-  font-size: 30px;
+h1 a {
+  font-size: 21px;
   text-decoration: none;
   color: var(--black-color);
   transition: all 0.2s;
 }
 
 nav ul {
-  margin: 0;
+  /* margin: 0; */
+  margin: 200px 10px 20px 500px;
   padding: 0;
 }
 
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 nav ul li a {
-  font-size: 19px;
+  font-size: 16px;
   text-decoration: none;
   color: var(--black-color);
   transition: all 0.2s;
@@ -59,11 +57,11 @@ nav ul li a {
 
 nav ul li a:hover {
   color: blue;
+  text-decoration: underline;
 }
 
 .container {
   height: 100vh;
-  padding: 120px;
 }
 
 .container h1 {
@@ -71,10 +69,26 @@ nav ul li a:hover {
   font-size: 50px;
 }
 
-.profileImage {
+.main-icon {
+  height: 420;
+  width: 100%;
+  background-color: beige;
+  display: block;
+  text-align: center;
+}
+
+.mainImage {
   object-fit: cover;
   height: 500px;
-  width: 500px;
+  width: 960px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.profileImage {
+  object-fit: cover;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
@@ -98,4 +112,324 @@ img {
 
 #skill button {
   margin-bottom: 100px;
+}
+
+.AboutTitle {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.BlogTitle {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.SnsTitle {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.AboutText {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.ProfileBox {
+  display: flex;
+  font-size: 13px;
+}
+
+.name dt {
+  float: left;
+  display: block;
+  width: 30%;
+  font-weight: bold;
+}
+
+.location dt {
+  float: left;
+  display: block;
+  width: 30%;
+  font-weight: bold;
+}
+
+.contact dt {
+  float: left;
+  display: block;
+  width: 30%;
+  font-weight: bold;
+}
+
+.business dt {
+  float: left;
+  display: block;
+  width: 30%;
+  font-weight: bold;
+}
+
+.name dd {
+  float: right;
+  width: 70%;
+  font-size: 12px;
+}
+
+.location dd {
+  float: right;
+  width: 70%;
+  font-size: 12px;
+}
+
+.contact dd {
+  float: right;
+  width: 70%;
+  font-size: 12px;
+}
+
+.business dd {
+  float: right;
+  width: 70%;
+  font-size: 12px;
+}
+
+.profileText {
+  margin-left: 30px;
+}
+
+.name {
+  display: flex;
+}
+
+.location {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+}
+
+.business {
+  display: flex;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:767px) {
+
+
+  .App {
+    font-size: 18px;
+    height: 100vh;
+    width: 100%;
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.9;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  header {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 25px;
+    display: block;
+  }
+
+
+  header .logo h1 {
+    margin: 21px 0 25px 0;
+    padding-left: 30px;
+    text-align: left;
+    color: black;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  h1 a {
+    margin: 21px 0 25px 0;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.2s;
+    margin-left: 10px;
+  }
+
+  nav {
+    margin-bottom: 20px;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  nav ul {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+  }
+
+  nav li {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .mainImage {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .main-icon {
+    height: 420;
+    width: 100%;
+    background-color: beige;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .my-3 a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .AboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .AboutText {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+
+  .ProfileBox {
+    display: block;
+  }
+
+  .ProfileImageBox {
+    height: 160px;
+    width: 360;
+    margin: 0 0 40px;
+  }
+
+  .profileImage {
+    margin-left: 30%;
+  }
+
+  .name {
+    margin-bottom: 0;
+  }
+
+  .name dt {
+    float: left;
+    display: block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .name dd {
+    float: right;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .location {
+    margin-bottom: 0;
+  }
+
+  .location dt {
+    float: left;
+    display: block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .location dd {
+    float: right;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
+
+  .contact dt {
+    float: left;
+    display: block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .contact dd {
+    float: right;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .business {
+    margin-bottom: 0;
+  }
+
+  .business dt {
+    float: left;
+    display: block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .business dd {
+    float: right;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .BlogTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .SnsTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

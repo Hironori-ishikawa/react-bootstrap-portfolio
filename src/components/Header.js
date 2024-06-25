@@ -5,22 +5,25 @@ export const Header = () => {
   return (
     <header>
       <div className="logo">
-        <h3><a href='/'>ポートフォリオ</a></h3>
+        <h1><a href='/'>H.Iポートフォリオサイト</a></h1>
       </div>
 
-      <nav>
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/sns">Sns</Link>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/sns">Sns</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </header>
   )
 }

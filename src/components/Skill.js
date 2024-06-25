@@ -1,27 +1,33 @@
 import React from 'react'
 import reactImage from "../Images/react.png";
-import jsImage from "../Images/js.png";
-import firebaseImage from "../Images/firebase.jpg";
+import NextjsImage from "../Images/nextjsicon.jpeg";
+import HtmlCssJsImage from "../Images/htmlcssjsiicon.png";
+import PhpImage from "../Images/phpicon.jpeg"
 
 export const Skill = () => {
   return (
     <div>
       <section id="skill">
         <div class="text-center">
-          <h1 class="title">スキル</h1>
+          <h2 class="section-heading text-uppercase mb-5">Skill</h2>
           <div class="row text-center">
+            <div class="col-md-4 services">
+              <img src={NextjsImage} alt='Nextjsアイコン' />
+              <h4>Next.js</h4>
+              <p>Next.js学習中です。</p>
+            </div>
             <div class="col-md-4 services">
               <img src={reactImage} alt='reactアイコン' />
               <h4>React</h4>
               <p>Reactがつかえます</p>
             </div>
             <div class="col-md-4 services">
-              <img src={jsImage} alt='jsアイコン' />
-              <h4>HTML/CSS</h4>
-              <p>HTML/CSSがつかえます</p>
+              <img src={HtmlCssJsImage} alt='HtmlCssJsアイコン' />
+              <h4>HTML/CSS/JavaScript</h4>
+              <p>HTML/CSS/Jsがつかえます</p>
             </div>
             <div class="col-md-4 services">
-              <img src={firebaseImage} alt='firebaseアイコン' />
+              <img src={PhpImage} alt='Phpアイコン' />
               <h4>php / Laravel</h4>
               <p>Laravelがつかえます</p>
             </div>

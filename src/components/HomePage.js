@@ -7,10 +7,12 @@ import { Profile } from './Profile';
 
 export const HomePage = () => {
   return (
-    <div className="container text-center">
+    <div className="">
       <Profile />
-      <Portfolio />
-      <Skill />
+      <div className='container text-center'>
+        <Portfolio />
+        <Skill />
+      </div>
     </div>
   )
 }
