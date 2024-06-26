@@ -8,38 +8,37 @@
   font-size: 18px;
   height: 100vh;
   width: 100%;
-  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', 'YuGothic', 'HiraKakuProN-W3', 'メイリオ', 'Meiryo', sans-serif;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  width: 960px;
-  background: white;
-  color: white;
+  position: relative;
+  max-width: 960px;
   height: 270px;
-  z-index: 10;
   margin: 0 auto;
 }
 
 
 header .logo h1 {
-  margin: 0;
-  padding: 0;
+  padding-top: 100px;
   color: black;
 }
 
 h1 a {
-  font-size: 21px;
+  width: 275px;
+  height: 35px;
   text-decoration: none;
   color: var(--black-color);
   transition: all 0.2s;
+  font-family: cursive;
 }
 
 nav ul {
-  /* margin: 0; */
-  margin: 200px 10px 20px 500px;
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 70px;
+  font-family: 'Lato', sans-serif;
 }
 
 nav ul li {
@@ -61,7 +60,7 @@ nav ul li a:hover {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
 }
 
 .container h1 {
@@ -75,6 +74,7 @@ nav ul li a:hover {
   background-color: beige;
   display: block;
   text-align: center;
+  padding-bottom: 1px;
 }
 
 .mainImage {
@@ -83,6 +83,12 @@ nav ul li a:hover {
   width: 960px;
   margin-bottom: 15px;
   border-radius: 5px;
+}
+
+.mainText {
+  color: #505050;
+  font-family: 'Lato', sans-serif;
+
 }
 
 .profileImage {
@@ -114,18 +120,8 @@ img {
   margin-bottom: 100px;
 }
 
-.AboutTitle {
-  font-size: 40px;
-  margin-top: 10px;
-  margin-bottom: 70px;
-}
-
-.BlogTitle {
-  font-size: 40px;
-  margin-top: 10px;
-  margin-bottom: 70px;
-}
-
+.AboutTitle,
+.BlogTitle,
 .SnsTitle {
   font-size: 40px;
   margin-top: 10px;
@@ -142,27 +138,9 @@ img {
   font-size: 13px;
 }
 
-.name dt {
-  float: left;
-  display: block;
-  width: 30%;
-  font-weight: bold;
-}
-
-.location dt {
-  float: left;
-  display: block;
-  width: 30%;
-  font-weight: bold;
-}
-
-.contact dt {
-  float: left;
-  display: block;
-  width: 30%;
-  font-weight: bold;
-}
-
+.name dt,
+.location dt,
+.contact dt,
 .business dt {
   float: left;
   display: block;
@@ -170,48 +148,100 @@ img {
   font-weight: bold;
 }
 
-.name dd {
-  float: right;
-  width: 70%;
-  font-size: 12px;
-}
-
-.location dd {
-  float: right;
-  width: 70%;
-  font-size: 12px;
-}
-
-.contact dd {
-  float: right;
-  width: 70%;
-  font-size: 12px;
-}
-
+.name dd,
+.location dd,
+.contact dd,
 .business dd {
   float: right;
   width: 70%;
   font-size: 12px;
 }
 
+
 .profileText {
   margin-left: 30px;
 }
 
-.name {
-  display: flex;
-}
-
-.location {
-  display: flex;
-}
-
-.contact {
-  display: flex;
-}
-
+.name,
+.location,
+.contact,
 .business {
   display: flex;
+}
+
+.ReactMemoAppImageBox {}
+
+.ReactMemoAppImage,
+.NextJsTechBlogImage {
+  margin-bottom: 40px;
+  height: 160px;
+  width: 280px;
+  border: #505050 2px;
+}
+
+.MemoAppTitle,
+.TechBlogTitle,
+.SkillNextJs,
+.SkillReact,
+.SkillHtmlCssJs,
+.SkillPhp {
+  font-size: 25px;
+  margin-bottom: 16px;
+  color: #505050;
+  font-family: 'Lato',
+    sans-serif;
+}
+
+.MemoAppTitle-p,
+.TechBlogTitle-p {
+  margin-bottom: 45px;
+  text-align: center;
+  line-height: 1.0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #a5a5a5;
+}
+
+.MemoAppText,
+.TechBlogText,
+.SkillNextJsText,
+.SkillReactText,
+.SkillHtmlCssJsText,
+.SkillPhpText {
+  font-size: 14px;
+}
+
+.PortfolioTitle,
+.SkillTitle {
+  margin-bottom: 65px;
+  text-align: center;
+  line-height: 1.0;
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+
+.HtmlCssJsImage {
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  height: 300px;
+}
+
+.Footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+  font-size: small;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 
@@ -244,7 +274,9 @@ img {
     padding-left: 30px;
     text-align: left;
     color: black;
+    padding-top: 0;
   }
+
 
   h1 {
     font-size: 2.5rem;
@@ -261,6 +293,7 @@ img {
     color: var(--black-color);
     transition: all 0.2s;
     margin-left: 10px;
+    font-family: cursive;
   }
 
   nav {
@@ -284,7 +317,7 @@ img {
   nav ul li a {
     display: block;
     width: 100%;
-    padding: 12px 0;
+    padding: 6px 0;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -316,7 +349,9 @@ img {
     text-decoration: none;
   }
 
-  .AboutTitle {
+  .AboutTitle,
+  .BlogTitle,
+  .SnsTitle {
     text-align: center;
     font-size: 40px;
     margin-top: 10px;
@@ -342,68 +377,16 @@ img {
     margin-left: 30%;
   }
 
-  .name {
-    margin-bottom: 0;
-  }
-
-  .name dt {
-    float: left;
-    display: block;
-    width: 30%;
-    font-weight: bold;
-    font-size: 11px;
-  }
-
-  .name dd {
-    float: right;
-    width: 70%;
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-
-  .location {
-    margin-bottom: 0;
-  }
-
-  .location dt {
-    float: left;
-    display: block;
-    width: 30%;
-    font-weight: bold;
-    font-size: 11px;
-    text-align: left;
-  }
-
-  .location dd {
-    float: right;
-    width: 70%;
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-
-  .contact {
-    margin-bottom: 0;
-  }
-
-  .contact dt {
-    float: left;
-    display: block;
-    width: 30%;
-    font-weight: bold;
-    font-size: 11px;
-  }
-
-  .contact dd {
-    float: right;
-    width: 70%;
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-
+  .name,
+  .location,
+  .contact,
   .business {
     margin-bottom: 0;
   }
 
+  .name dt,
+  .location dt,
+  .contact dt,
   .business dt {
     float: left;
     display: block;
@@ -412,6 +395,9 @@ img {
     font-size: 11px;
   }
 
+  .name dd,
+  .location dd,
+  .contact dd,
   .business dd {
     float: right;
     width: 70%;
@@ -419,17 +405,33 @@ img {
     margin-bottom: 0;
   }
 
-  .BlogTitle {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+  img {
+    width: 300px;
+    height: 500px;
   }
 
-  .SnsTitle {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .ReactMemoAppImageBox {}
+
+  .ReactMemoAppImage {
+    margin-bottom: 40px;
   }
+
+  .MemoAppTitle {
+    font-size: 25px;
+    margin-bottom: 16px;
+    color: #505050;
+  }
+
+  .MemoAppTitle-p {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: #a5a5a5;
+  }
+
 }

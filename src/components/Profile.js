@@ -7,12 +7,14 @@ export const Profile = () => {
       <div className=''>
         <img src={mainImage} alt='アイコン' className="mainImage" />
       </div>
-      <p>
-        CAMPが趣味なITエンジニアです。
-      </p>
-      <p>
-        主にファミキャンしてます。
-      </p>
+      <div className='mainText'>
+        <p>
+          CAMPが趣味なITエンジニアです。
+        </p>
+        <p>
+          主にファミキャンしてます。
+        </p>
+      </div>
     </div>
   )
 }

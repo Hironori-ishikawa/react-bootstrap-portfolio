@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header>
       <div className="logo">
-        <h1><a href='/'>H.Iポートフォリオサイト</a></h1>
+        <h1><a href='/'>H.I PortfolioSite</a></h1>
       </div>
 
       <div>
