@@ -1,8 +1,8 @@
 import React from 'react'
 import reactImage from "../Images/react.png";
-import NextJsImage from "../Images/NextJsIcon.jpeg";
-import HtmlCssJsImage from "../Images/HtmlCssJsIcon.png";
-import PhpImage from "../Images/PhpIcon.jpeg"
+import NextJsImage from "../Images/nextjsicon.jpeg";
+import HtmlCssJsImage from "../Images/htmlcssjsiicon.png";
+import PhpImage from "../Images/phpicon.jpeg"
 
 export const Skill = () => {
   return (
