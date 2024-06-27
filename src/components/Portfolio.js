@@ -14,14 +14,14 @@ export const Portfolio = () => {
 
             <div class="col-md-4">
               <h3 class="MemoAppTitle">
-                メモアプリ
+                買い物メモアプリ
               </h3>
-              <p className='MemoAppTitle-p'>MemoApp</p>
+              <p className='MemoAppTitle-p'>CashMemoApp</p>
               <div className='ReactMemoAppImageBox'>
                 <a href='https://react-memo-app-chi.vercel.app/' target="_blank" rel="noopener noreferrer"><img src={ReactMemoAppImage} alt='reactメモアプリ' className="ReactMemoAppImage" /></a>
               </div>
               <p class="MemoAppText">
-                Reactによるメモアプリです。 タイトルと金額を入力しメモとして使用できるアプリです。合計個数、合計金額の表示と個数の変動が簡単にできます。
+                Reactによる買い物メモアプリです。 タイトルと金額を入力しメモとして使用できるアプリです。合計個数、合計金額の表示と個数の変動が簡単にできます。
               </p>
             </div>
 

@@ -82,7 +82,6 @@ nav ul li a:hover {
   height: 500px;
   width: 960px;
   margin-bottom: 15px;
-  border-radius: 5px;
 }
 
 .mainText {
@@ -100,8 +99,8 @@ nav ul li a:hover {
 }
 
 img {
-  width: 300px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
 }
 
 .service {
@@ -109,16 +108,25 @@ img {
   margin-bottom: 60px;
 }
 
-#skill img {
+
+.NextJsImage,
+.PhpImage {
+  height: fit-content;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.HtmlCssJsImage {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.reactImage {
   object-fit: cover;
   margin-bottom: 12px;
   margin-top: 12px;
-  height: 300px;
 }
 
-#skill button {
-  margin-bottom: 100px;
-}
 
 .AboutTitle,
 .BlogTitle,
@@ -185,7 +193,7 @@ img {
 .SkillReact,
 .SkillHtmlCssJs,
 .SkillPhp {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 16px;
   color: #505050;
   font-family: 'Lato',
@@ -211,6 +219,7 @@ img {
 .SkillHtmlCssJsText,
 .SkillPhpText {
   font-size: 14px;
+  margin-bottom: 45px;
 }
 
 .PortfolioTitle,
@@ -224,24 +233,24 @@ img {
   letter-spacing: 0.05em;
 }
 
-.HtmlCssJsImage {
-  height: fit-content;
-  width: fit-content;
-  margin-bottom: 12px;
-  margin-top: 12px;
-  height: 300px;
-}
-
-.Footer {
+.FooterBox {
+  display: flex;
+  margin-top: 20px;
+  position: relative;
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: block;
+  justify-content: space-between;
+}
+
+.FooterName {
+  margin-top: 75px;
   font-size: small;
-  text-align: center;
-  justify-content: flex-end;
-  align-items: flex-end;
+}
+
+.FooterNav {
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 40px;
+  font-size: small;
 }
 
 
@@ -405,10 +414,22 @@ img {
     margin-bottom: 0;
   }
 
+  .NextJsImage,
+  .PhpImage {
+    height: fit-content;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
 
-  img {
-    width: 300px;
-    height: 500px;
+  .HtmlCssJsImage {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .reactImage {
+    object-fit: cover;
+    margin-bottom: 12px;
+    margin-top: 12px;
   }
 
   .ReactMemoAppImageBox {}
@@ -432,6 +453,22 @@ img {
     font-size: 13px;
     letter-spacing: 0.1em;
     color: #a5a5a5;
+  }
+
+  .FooterBox {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .FooterName {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .FooterNav {
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 50px;
+    font-size: small;
   }
 
 }

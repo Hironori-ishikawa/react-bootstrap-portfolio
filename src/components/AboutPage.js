@@ -33,7 +33,7 @@ export const AboutPage = () => {
             </p>
             <p className='business'>
               <dt>事業内容 : </dt>
-              <dd>Web制作における要件的義、HTML・CSSコーディング、スマートフォンサイト、保守運用</dd>
+              <dd>システム開発の要件的義、Web制作における HTML・CSSコーディング、スマートフォンサイトの保守運用</dd>
             </p>
           </div>
         </div>
