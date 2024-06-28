@@ -177,7 +177,6 @@ img {
   display: flex;
 }
 
-.ReactMemoAppImageBox {}
 
 .ReactMemoAppImage,
 .NextJsTechBlogImage {
@@ -432,7 +431,6 @@ img {
     margin-top: 12px;
   }
 
-  .ReactMemoAppImageBox {}
 
   .ReactMemoAppImage {
     margin-bottom: 40px;
