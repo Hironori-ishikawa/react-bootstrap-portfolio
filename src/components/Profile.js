@@ -4,16 +4,16 @@ import mainImage from "../Images/main.jpg";
 export const Profile = () => {
   return (
     <div className='main-icon'>
-      <div className=''>
+      <div className='mainImageBox'>
         <img src={mainImage} alt='アイコン' className="mainImage" />
-      </div>
-      <div className='mainText'>
-        <p>
-          CAMPが趣味なITエンジニアです。
-        </p>
-        <p>
-          主にファミキャンしてます。
-        </p>
+        <div className='mainText'>
+          <p>
+            OOが得意なITエンジニアです。
+          </p>
+          <p>
+            趣味はCAMPです。
+          </p>
+        </div>
       </div>
     </div>
   )

@@ -12,11 +12,12 @@ export const Footer = () => {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <a href='https://nextjs-blog-app-one-gamma.vercel.app/' target="_blank" rel="noopener noreferrer">Blog
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/sns">Sns</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

@@ -6,6 +6,9 @@ export const AboutPage = () => {
     <div>
       <div className='container'>
         <p className='AboutTitle'>About</p>
+        <div className='ProfileImageBox'>
+          <img src={profileImage} alt='アイコン' className="profileImage" />
+        </div>
         <div className='AboutText'>
           <p>
             元アパレル販売員のITエンジニアです。<br /><br />
@@ -15,9 +18,6 @@ export const AboutPage = () => {
           </p>
         </div>
         <div className='ProfileBox'>
-          <div className='ProfileImageBox'>
-            <img src={profileImage} alt='アイコン' className="profileImage" />
-          </div>
           <div className='profileText'>
             <p className='name'>
               <dt>名称 : </dt>
