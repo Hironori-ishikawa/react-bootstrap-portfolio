@@ -33,7 +33,6 @@ h1 a {
   color: var(--black-color);
   transition: all 0.2s;
   font-family: "MS Pゴシック";
-  padding-left: 30px;
 }
 
 .menu {
@@ -230,7 +229,7 @@ img {
 
 .PortfolioItemBox {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .PortfolioItems {
@@ -251,12 +250,18 @@ img {
   font-size: 16px;
 }
 
-.FooterBox {
-  display: flex;
+.Footer {
   position: relative;
   max-width: 960px;
-  justify-content: space-between;
   height: 100px;
+  margin: 0 auto;
+}
+
+.FooterBox {
+  padding-top: 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .FooterName {
@@ -499,6 +504,13 @@ img {
   .BackEndChartImage {
     width: 250px;
     height: 250px;
+  }
+
+
+  .Footer {
+    width: auto;
+    height: 40px;
+    margin-bottom: 25px;
   }
 
   .FooterBox {
