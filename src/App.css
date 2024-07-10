@@ -353,6 +353,7 @@ img {
 
   .mainImage {
     width: 100%;
+    height: 100px;
   }
 
   .main-icon {
@@ -367,8 +368,8 @@ img {
     font-family: "MS Pゴシック";
     position: absolute;
     /*重ねたい子要素にabsolute*/
-    top: 75%;
-    left: 80%;
+    top: 80%;
+    left: 70%;
     -ms-transform: translate(-50%, -50%);
     /*ベンダープレフィックス*/
     -webkit-transform: translate(-50%, -50%);
@@ -376,12 +377,17 @@ img {
     transform: translate(-50%, -50%);
     /*センター寄せの修正*/
     color: #fff;
-    font-size: 16px;
+    font-size: 10px;
     margin: 0 !important;
     /*文字がずれている場合や*/
     padding: 0 !important;
     /*文字が折り返される場合*/
-    width: 40%;
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .mainText p {
+    margin-bottom: 3px;
   }
 
   .service {
@@ -391,6 +397,7 @@ img {
 
   .SkillBox {
     margin-bottom: 45px;
+    margin-top: 60px;
   }
 
   .PortfolioItemBox {
@@ -493,7 +500,7 @@ img {
   .SKillChartText {
     text-align: left;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .SkillInner {
