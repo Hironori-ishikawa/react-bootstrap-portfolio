@@ -40,10 +40,14 @@ h1 a {
   margin-top: auto;
 }
 
+nav ul {
+  margin-bottom: 0px;
+}
+
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 nav ul li a {
@@ -59,13 +63,24 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.container {
-  height: 100%;
-  position: relative;
-  max-width: 960px;
+.FaGithubIcon {
+  font-size: 30px;
 }
 
-.container h1 {
+.FaGithubIcon a {
+  color: #010000;
+  text-decoration: none;
+}
+
+.mainBox {
+  height: 100%;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.mainBox h1 {
   text-align: center;
   font-size: 50px;
 }
@@ -89,12 +104,12 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.mainText {
+.mainTextBox {
   font-family: "MS Pゴシック";
   position: absolute;
   /*重ねたい子要素にabsolute*/
-  top: 80%;
-  left: 83%;
+  top: 50%;
+  left: 50%;
   -ms-transform: translate(-50%, -50%);
   /*ベンダープレフィックス*/
   -webkit-transform: translate(-50%, -50%);
@@ -110,7 +125,12 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.mainText p {
+.mainText h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.mainTextBox p {
   font-weight: bold;
 }
 
@@ -237,17 +257,65 @@ img {
 }
 
 .SkillInner {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  height: auto;
+}
+
+.PersonalSkillChartImage {
+  width: 350px;
+  height: 350px;
 }
 
 
-.SkillText,
-.SKillChartText {
+.SkillText {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 16px;
+}
+
+.skill-bar-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  width: 30%;
+  padding: 4px;
+  border-radius: 50px;
+  background-color: #CECBBC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  height: 50px;
+
+  p {
+    font-size: 14px;
+    color: #363636;
+    width: 40%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .dots {
+    width: 50%;
+    display: flex;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-left: 4%;
+    }
+
+    .green {
+      background-color: #003D4D;
+    }
+  }
 }
 
 .Footer {
@@ -267,14 +335,22 @@ img {
 .FooterName {
   font-size: small;
   padding-top: auto;
-  padding-top: 30px;
-  margin-right: 30px;
 }
 
 .FooterNav {
   font-family: "MS Pゴシック";
   font-size: small;
-  padding-top: 30px;
+}
+
+.FooterNav nav ul {
+  padding-left: 0;
+}
+
+.FooterNav nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 0;
 }
 
 
@@ -286,74 +362,69 @@ img {
 
   .App {
     font-size: 18px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: "MS Pゴシック";
   }
 
   header {
-    width: auto;
-    height: 40px;
-    margin-bottom: 25px;
+    position: relative;
+    max-width: 960px;
+    height: 100px;
+    margin: 0 auto;
   }
 
 
   .logo {
+    padding-top: 20px;
+    color: black;
     display: flex;
-    padding-top: 0px;
+    justify-content: space-between;
   }
 
-
-
   h1 a {
-    font-size: 20px;
+    width: 275px;
+    height: 35px;
     text-decoration: none;
     color: var(--black-color);
     transition: all 0.2s;
     font-family: "MS Pゴシック";
-    margin-left: 20px;
   }
 
-  nav {
-    margin-bottom: 20px;
+  .menu {
+    text-align: end;
+    margin-top: auto;
   }
 
-  nav ul {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  nav li {
-    float: left;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav ul li {
+  nav ul li {
     list-style: none;
     display: inline-block;
+    margin-right: 30px;
   }
-
 
   nav ul li a {
-    display: block;
-    width: 100%;
-    /* padding: 4px 0; */
-    padding-bottom: 7px;
-    font-family: "MS Pゴシック";
-    font-weight: 400;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-  }
-
-  a {
-    color: #333;
+    font-size: 16px;
     text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.2s;
+    font-family: "MS Pゴシック";
   }
 
-  .mainImage {
-    width: 100%;
-    height: 100px;
+  nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .container {
+    height: 100%;
+    position: relative;
+    max-width: 960px;
+    padding: initial;
+  }
+
+  .container h1 {
+    text-align: center;
+    font-size: 50px;
   }
 
   .main-icon {
@@ -361,7 +432,18 @@ img {
     width: 100%;
     display: block;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
+  }
+
+  .mainImageBox {
+    width: 100%;
+    position: relative;
+  }
+
+  .mainImage {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
   }
 
   .mainText {
@@ -369,7 +451,7 @@ img {
     position: absolute;
     /*重ねたい子要素にabsolute*/
     top: 80%;
-    left: 70%;
+    left: 83%;
     -ms-transform: translate(-50%, -50%);
     /*ベンダープレフィックス*/
     -webkit-transform: translate(-50%, -50%);
@@ -377,84 +459,55 @@ img {
     transform: translate(-50%, -50%);
     /*センター寄せの修正*/
     color: #fff;
-    font-size: 10px;
+    font-size: 22px;
     margin: 0 !important;
     /*文字がずれている場合や*/
     padding: 0 !important;
     /*文字が折り返される場合*/
-    width: 45%;
-    margin-bottom: 0;
+    width: 100%;
   }
 
   .mainText p {
-    margin-bottom: 3px;
+    font-weight: bold;
+  }
+
+  .profileImage {
+    object-fit: cover;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
   }
 
   .service {
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-top: 80px;
+    margin-bottom: 60px;
   }
 
   .SkillBox {
-    margin-bottom: 45px;
-    margin-top: 60px;
-  }
-
-  .PortfolioItemBox {
-    display: block;
-  }
-
-  .PortfolioTitle,
-  .SkillTitle {
-    margin-bottom: 30px;
-    text-align: center;
-    line-height: 1.0;
-    font-family: "MS Pゴシック";
-    font-weight: 100;
-    font-size: 30px;
-    letter-spacing: 0.05em;
-  }
-
-  .MemoAppTitle,
-  .TechBlogTitle {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #505050;
-    font-family: "MS Pゴシック";
+    margin-bottom: 60px;
   }
 
 
   .AboutTitle {
-    text-align: center;
     font-size: 40px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
   }
 
   .AboutText {
-    margin-bottom: 30px;
-    font-size: 13px;
+    margin-bottom: 50px;
+    font-size: 14px;
   }
 
   .ProfileBox {
-    display: block;
-  }
-
-  .ProfileImageBox {
-    height: 160px;
-    width: 360;
-    margin: 0 0 40px;
-  }
-
-  .profileImage {
-    margin-left: 30%;
-  }
-
-  .name,
-  .location,
-  .contact,
-  .business {
-    margin-bottom: 0;
+    font-size: 14px;
+    margin-bottom: 100px;
   }
 
   .name dt,
@@ -463,9 +516,7 @@ img {
   .business dt {
     float: left;
     display: block;
-    width: 30%;
-    font-weight: bold;
-    font-size: 11px;
+    width: 20%;
   }
 
   .name dd,
@@ -474,19 +525,37 @@ img {
   .business dd {
     float: right;
     width: 70%;
-    font-size: 12px;
-    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+
+  .name,
+  .location,
+  .contact,
+  .business {
+    display: flex;
   }
 
 
   .ReactMemoAppImage,
   .NextJsTechBlogImage {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    height: 160px;
+    width: 280px;
+    border: #505050 2px;
+  }
+
+  .MemoAppTitle,
+  .TechBlogTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #505050;
+    font-family: "MS Pゴシック";
   }
 
   .MemoAppTitle-p,
   .TechBlogTitle-p {
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     text-align: center;
     line-height: 1.0;
     font-family: "MS Pゴシック";
@@ -496,46 +565,72 @@ img {
     color: #a5a5a5;
   }
 
-  .SkillText,
-  .SKillChartText {
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 12px;
+  .MemoAppText,
+  .TechBlogText {
+    font-size: 14px;
+    margin-bottom: 45px;
+    width: 280px;
+    text-align: justify;
+  }
+
+  .PortfolioTitle,
+  .SkillTitle {
+    margin-bottom: 65px;
+    text-align: center;
+    line-height: 1.0;
+    font-family: "MS Pゴシック";
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+  }
+
+  .PortfolioItemBox {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .PortfolioItems {
+    text-align: -webkit-center;
   }
 
   .SkillInner {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
   }
 
-  .FrontEndChartImage,
-  .BackEndChartImage {
-    width: 250px;
-    height: 250px;
-  }
 
+  .SkillText,
+  .SKillChartText {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
 
   .Footer {
-    width: auto;
-    height: 40px;
-    margin-bottom: 25px;
+    position: relative;
+    max-width: 960px;
+    height: 100px;
+    margin: 0 auto;
   }
 
   .FooterBox {
+    padding-top: 20px;
+    color: black;
     display: flex;
-    margin-top: 40px;
-    height: 100px;
-    width: auto;
+    justify-content: space-between;
   }
 
   .FooterName {
-    padding-top: 50px;
-    margin-right: 20px;
-    font-family: "MS Pゴシック";
+    font-size: small;
+    padding-top: auto;
+    padding-top: 30px;
+    margin-right: 30px;
   }
 
   .FooterNav {
     font-family: "MS Pゴシック";
     font-size: small;
+    padding-top: 30px;
   }
-
 }

@@ -1,7 +1,5 @@
 import React from 'react'
-
-import FrontEndChartImage from "../Images/Skill/FrontEnd-Chart.png"
-import BackEndChartImage from "../Images/Skill/BackEnd-Chart.png"
+import PersonalSkillChartImage from "../Images/Skill/PersonalSkillChart.png"
 
 export const Skill = () => {
   return (
@@ -11,30 +9,123 @@ export const Skill = () => {
           <h2 class="SkillTitle">Skill</h2>
           <div>
             <p className='SkillText'>
-              これまでのスキルをレーダーチャートで表しました。広く浅くになりますが、フロントエンドからバックエンドまで対応可能ですが全体的に専門的な知識の不足を認識しております。今後はフロントエンドをメインに専門知識のレベルアップを図っていきたいと思っております。<br />
-              また上流工程にはなりますが、約1年間ほど要件的義や顧客折衝を担当した経験があり、自身のコミュニケーション力を武器に業務を円滑に進める自信があります。
+              これまでのスキルをレーダーチャートで表しました。<br />
+              広く浅くになりますが、フロントエンドからバックエンドまで幅広く経験があり、数十桁のシンプルな実装であれば対応可能です。<br />
+              現在はReactやNext.jsを学習中でして、特にフロントエンド分野の専門知識のスキルアップを図っております。ただ、バックエンド分野の実装にも興味があり、フルスタックエンジニアを目指しております。<br />
+              また上流工程にはなりますが、約1年間ほど要件定義や顧客折衝を担当した経験があり、自身のコミュニケーション力を武器に業務を円滑に進める自信があります。
             </p>
           </div>
           <div class="SkillInner">
-            <div class="FrontEndChartImageBox">
-              <img src={FrontEndChartImage} alt='FrontEndChartImage' className='FrontEndChartImage' />
+            <div class="PersonalSkillChartImageBox">
+              <img src={PersonalSkillChartImage} alt='PersonalSkillChartImage' className='PersonalSkillChartImage' />
+            </div>
 
+            <div className='skill-bar-box'>
+              <div class="skill-bar">
+                <p>HTML/CSS</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>JavaScript</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>jQuery</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>React</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>Next.Js</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>Php</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>Laravel</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>Java</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <p>MySQL</p>
+                <div class="dots">
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot green"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
             </div>
-            <div class="BackEndChartImageBox">
-              <img src={BackEndChartImage} alt='BackEndChartImage' className='BackEndChartImage' />
-            </div>
+
           </div>
-          <div>
-            <p className='SKillChartText'>
-              チャートの見方としては<br />
-              「1: 独学で触った程度」<br />
-              「2: 研修など使用した経験がありもう少し習熟が必要」<br />
-              「3: 自力で開発ができる」<br />
-              「4: 自由に駆使できる」<br />
-              「5: 実務レベルで使用できる」<br />
-              という感じです。
-            </p>
-          </div>
+
+
+
+
         </div>
       </section>
     </div>

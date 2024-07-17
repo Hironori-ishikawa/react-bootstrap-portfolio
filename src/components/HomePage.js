@@ -7,9 +7,9 @@ import { Profile } from './Profile';
 
 export const HomePage = () => {
   return (
-    <div className="">
+    <div>
       <Profile />
-      <div className='container text-center'>
+      <div className='mainBox'>
         <Portfolio />
         <Skill />
       </div>

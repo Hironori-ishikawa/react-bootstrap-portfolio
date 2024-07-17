@@ -14,7 +14,7 @@ export const AboutPage = () => {
             元アパレル販売員のITエンジニアです。<br /><br />
             2019年より転職しIT業界へ<br />
             2022年より某携帯外資メーカーのHP保守運用を経験<br />
-            2023年より金融機関にて要件的義を担当<br />
+            2023年より金融機関にて要件定義を担当<br />
           </p>
         </div>
         <div className='ProfileBox'>
