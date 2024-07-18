@@ -203,8 +203,8 @@ img {
 .ReactMemoAppImage,
 .NextJsTechBlogImage {
   margin-bottom: 40px;
-  height: 160px;
-  width: 280px;
+  height: 210px;
+  width: 330px;
   border: #505050 2px;
 }
 
@@ -232,7 +232,7 @@ img {
 .TechBlogText {
   font-size: 14px;
   margin-bottom: 45px;
-  width: 280px;
+  width: 330px;
   text-align: justify;
 }
 
@@ -362,33 +362,35 @@ img {
 
   .App {
     font-size: 18px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family: "MS Pゴシック";
   }
 
   header {
     position: relative;
-    max-width: 960px;
-    height: 100px;
+    max-width: 100%;
+    height: 80px;
     margin: 0 auto;
   }
 
 
   .logo {
-    padding-top: 20px;
+    width: 100%;
+    padding-top: 10px;
     color: black;
     display: flex;
     justify-content: space-between;
   }
 
   h1 a {
-    width: 275px;
+    width: 50px;
     height: 35px;
     text-decoration: none;
     color: var(--black-color);
     transition: all 0.2s;
     font-family: "MS Pゴシック";
+    font-size: 25px;
   }
 
   .menu {
@@ -396,14 +398,18 @@ img {
     margin-top: auto;
   }
 
+  nav ul {
+    margin-bottom: 0px;
+  }
+
   nav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 15px;
   }
 
   nav ul li a {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: var(--black-color);
     transition: all 0.2s;
@@ -415,14 +421,24 @@ img {
     text-decoration: underline;
   }
 
-  .container {
-    height: 100%;
-    position: relative;
-    max-width: 960px;
-    padding: initial;
+  .FaGithubIcon {
+    font-size: 28px;
   }
 
-  .container h1 {
+  .FaGithubIcon a {
+    color: #010000;
+    text-decoration: none;
+  }
+
+  .mainBox {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .mainBox h1 {
     text-align: center;
     font-size: 50px;
   }
@@ -442,16 +458,16 @@ img {
 
   .mainImage {
     object-fit: cover;
-    height: 250px;
+    height: 125px;
     width: 100%;
   }
 
-  .mainText {
+  .mainTextBox {
     font-family: "MS Pゴシック";
     position: absolute;
     /*重ねたい子要素にabsolute*/
-    top: 80%;
-    left: 83%;
+    top: 50%;
+    left: 50%;
     -ms-transform: translate(-50%, -50%);
     /*ベンダープレフィックス*/
     -webkit-transform: translate(-50%, -50%);
@@ -467,14 +483,20 @@ img {
     width: 100%;
   }
 
-  .mainText p {
+  .mainText h2 {
+    font-size: 40px;
     font-weight: bold;
+  }
+
+  .mainTextBox p {
+    font-weight: bold;
+    font-size: 14px;
   }
 
   .profileImage {
     object-fit: cover;
-    height: 160px;
-    width: 160px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     margin-bottom: 15px;
   }
@@ -485,29 +507,34 @@ img {
   }
 
   .service {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .SkillBox {
     margin-bottom: 60px;
   }
 
+  .AboutPageBox {
+    width: 280px;
+    margin: auto;
+  }
+
 
   .AboutTitle {
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 70px;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 25px;
   }
 
   .AboutText {
-    margin-bottom: 50px;
-    font-size: 14px;
+    margin-bottom: 25px;
+    font-size: 10px;
   }
 
   .ProfileBox {
-    font-size: 14px;
-    margin-bottom: 100px;
+    font-size: 10px;
+    margin-bottom: 50px;
   }
 
   .name dt,
@@ -516,7 +543,7 @@ img {
   .business dt {
     float: left;
     display: block;
-    width: 20%;
+    width: 35%;
   }
 
   .name dd,
@@ -525,7 +552,7 @@ img {
   .business dd {
     float: right;
     width: 70%;
-    font-size: 14px;
+    font-size: 10px;
   }
 
 
@@ -534,12 +561,13 @@ img {
   .contact,
   .business {
     display: flex;
+    margin-bottom: 3px;
   }
 
 
   .ReactMemoAppImage,
   .NextJsTechBlogImage {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     height: 160px;
     width: 280px;
     border: #505050 2px;
@@ -547,15 +575,15 @@ img {
 
   .MemoAppTitle,
   .TechBlogTitle {
-    font-size: 20px;
-    margin-bottom: 16px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #505050;
     font-family: "MS Pゴシック";
   }
 
   .MemoAppTitle-p,
   .TechBlogTitle-p {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     text-align: center;
     line-height: 1.0;
     font-family: "MS Pゴシック";
@@ -567,25 +595,29 @@ img {
 
   .MemoAppText,
   .TechBlogText {
-    font-size: 14px;
-    margin-bottom: 45px;
+    font-size: 10px;
+    margin-bottom: 35px;
     width: 280px;
     text-align: justify;
   }
 
+  .TechBlogText {
+    margin-bottom: 40px;
+  }
+
   .PortfolioTitle,
   .SkillTitle {
-    margin-bottom: 65px;
+    margin-bottom: 35px;
     text-align: center;
     line-height: 1.0;
     font-family: "MS Pゴシック";
     font-weight: 100;
-    font-size: 30px;
+    font-size: 23px;
     letter-spacing: 0.05em;
   }
 
   .PortfolioItemBox {
-    display: flex;
+    display: block;
     justify-content: space-around;
   }
 
@@ -594,28 +626,80 @@ img {
   }
 
   .SkillInner {
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
     margin-bottom: 30px;
+    display: block;
+    height: auto;
+  }
+
+  .PersonalSkillChartImage {
+    width: 250px;
+    height: 250px;
   }
 
 
-  .SkillText,
-  .SKillChartText {
-    text-align: left;
+  .SkillText {
+    font-size: 10px;
+    width: 280px;
+    margin: auto;
     margin-bottom: 30px;
-    font-size: 16px;
+  }
+
+  .skill-bar-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
+    height: auto;
+    margin: auto;
+  }
+
+  .skill-bar {
+    width: 45%;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: #CECBBC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+    height: 50px;
+
+    p {
+      font-size: 10px;
+      color: #363636;
+      width: 40%;
+      text-align: center;
+      margin: 0;
+    }
+
+    .dots {
+      width: 50%;
+      display: flex;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-left: 4%;
+      }
+
+      .green {
+        background-color: #003D4D;
+      }
+    }
   }
 
   .Footer {
     position: relative;
-    max-width: 960px;
-    height: 100px;
+    max-width: 100%;
+    height: 80px;
     margin: 0 auto;
   }
 
   .FooterBox {
-    padding-top: 20px;
+    padding-top: 0px;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -624,13 +708,21 @@ img {
   .FooterName {
     font-size: small;
     padding-top: auto;
-    padding-top: 30px;
-    margin-right: 30px;
   }
 
   .FooterNav {
     font-family: "MS Pゴシック";
     font-size: small;
-    padding-top: 30px;
+  }
+
+  .FooterNav nav ul {
+    padding-left: 0;
+  }
+
+  .FooterNav nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 0;
   }
 }

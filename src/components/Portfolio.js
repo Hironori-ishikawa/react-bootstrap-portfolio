@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactMemoAppImage from "../Images/portfolio/react-memo-app.png";
+import ReactMemoAppImage from "../Images/portfolio/ReactCashMemoAppImage.png";
 import NextJsTechBlogImage from "../Images/portfolio/nextjs-tech-blog.png";
 
 export const Portfolio = () => {
@@ -21,7 +21,9 @@ export const Portfolio = () => {
                 <a href='https://react-memo-app-chi.vercel.app/' target="_blank" rel="noopener noreferrer"><img src={ReactMemoAppImage} alt='reactメモアプリ' className="ReactMemoAppImage" /></a>
               </div>
               <div class="MemoAppText">
-                買い物メモアプリです。 タイトルと金額を入力しメモとして使用できるアプリです。合計個数、合計金額の表示と個数の変動が簡単にできます。
+                買い物メモアプリです。 タイトルと金額を入力しメモとして使用できるアプリです。合計個数、合計金額の表示と個数の変動が簡単にできます。<br />
+                ポイントは、シンプルな見た目と操作で簡単に使用できます。<br />
+                注力した点は、個数の変動をできるようにし、合計金額と合計個数も連動して表示しているところです。<br /><br />
                 <p>
                   開発言語:React<br />
                   制作時間:3週間<br />
@@ -40,7 +42,9 @@ export const Portfolio = () => {
               </div>
               <div class="TechBlogText">
                 テックブログです。
-                画像+テキスト投稿機能とコメント機能、いいね機能を実装しております。主に学習記録として活用中です。
+                画像+テキスト投稿機能とコメント機能、いいね機能を実装しております。主に学習記録として活用中です。<br />
+                苦労した点は、基本的なブログの投稿機能に加え、SNSらしさを出した買ったので、いいね機能を追加実装した点です。<br />
+                <br />
                 <p>
                   開発言語:Next.js<br />
                   制作時間:2ヶ月<br />
