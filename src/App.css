@@ -311,10 +311,12 @@ img {
     border-radius: 50%;
     background-color: #fff;
     margin-left: 4%;
+    display: inline-block;
   }
 
   .green {
     background-color: #003D4D;
+    display: inline-block;
   }
 }
 
@@ -683,10 +685,12 @@ img {
         border-radius: 50%;
         background-color: #fff;
         margin-left: 4%;
+        display: inline-block;
       }
 
       .green {
         background-color: #003D4D;
+        display: inline-block;
       }
     }
   }
