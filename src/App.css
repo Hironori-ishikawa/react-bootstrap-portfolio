@@ -303,18 +303,18 @@ img {
   .dots {
     width: 50%;
     display: flex;
+  }
 
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: #fff;
-      margin-left: 4%;
-    }
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 4%;
+  }
 
-    .green {
-      background-color: #003D4D;
-    }
+  .green {
+    background-color: #003D4D;
   }
 }
 
@@ -660,10 +660,10 @@ img {
     border-radius: 50px;
     background-color: #CECBBC;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 2%;
-    height: 50px;
+    height: 40px;
 
     p {
       font-size: 10px;
@@ -674,7 +674,7 @@ img {
     }
 
     .dots {
-      width: 50%;
+      width: 40%;
       display: flex;
 
       .dot {
