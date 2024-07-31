@@ -11,9 +11,9 @@ export const AboutPage = () => {
       <div className='AboutText'>
         <p>
           元アパレル販売員のITエンジニアです。<br /><br />
-          2021年 LaravelのWebアプリ開発を経験<br />
-          2022年 Webサイトの運用保守を経験<br />
-          2023年 システム開発 要件定義を経験<br />
+          2021年7月に開発案件を経験。<br />
+          2022年11に運用保守を経験。<br />
+          2023年7月に要件定義を経験。<br />
         </p>
       </div>
       <div className='ProfileBox'>
