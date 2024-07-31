@@ -156,6 +156,11 @@ img {
   margin-bottom: 60px;
 }
 
+.AboutPageBox {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 
 .AboutTitle {
   font-size: 40px;
