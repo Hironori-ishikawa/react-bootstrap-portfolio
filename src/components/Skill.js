@@ -1,5 +1,5 @@
 import React from 'react'
-import PersonalSkillChartImage from "../Images/Skill/PersonalSkillChart.png"
+import PersonalSkillChartImage from "../Images/Skill/PersonalSkillChart.jpeg"
 
 export const Skill = () => {
   return (
@@ -16,108 +16,113 @@ export const Skill = () => {
           </div>
           <div class="SkillInner">
             <div class="PersonalSkillChartImageBox">
+              <div className='PersonalSkillTitle'>パーソナルスキル</div>
               <img src={PersonalSkillChartImage} alt='PersonalSkillChartImage' className='PersonalSkillChartImage' />
             </div>
 
-            <div className='skill-bar-box'>
-              <div class="skill-bar">
-                <p>HTML/CSS</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
+            <div className='SkillInner-ber'>
+              <div className='Skill-bar-Title'>言語スキル</div>
+              <div className='skill-bar-box'>
+                <div class="skill-bar">
+                  <p>HTML/CSS</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>JavaScript</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>jQuery</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>React</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>Next.Js</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>Php</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>Laravel</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>Java</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <p>MySQL</p>
+                  <div class="dots">
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot green"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
                 </div>
               </div>
 
-              <div class="skill-bar">
-                <p>JavaScript</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>jQuery</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>React</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>Next.Js</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>Php</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>Laravel</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>Java</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-
-              <div class="skill-bar">
-                <p>MySQL</p>
-                <div class="dots">
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot green"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
             </div>
 
           </div>
